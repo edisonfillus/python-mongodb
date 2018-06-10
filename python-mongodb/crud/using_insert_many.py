@@ -20,7 +20,7 @@ def insert_many():
     people_to_insert = [andrew, richard]
     try:
         people.insert_many(people_to_insert, ordered=False)
-        # If ordered=True, it if stop bulk insert after any error
+        # If ordered=True, it will stop bulk insert after any error
         # If ordered=False, it will ignore errors and insert all valid
     except Exception as e:
         print("Unexpected error:", type(e), e)
